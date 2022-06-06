@@ -1,19 +1,15 @@
 package dev.ivanwilhelm.parkingcontrol.dtos;
 
-import org.hibernate.validator.constraints.UniqueElements;
-
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 public class ParkingSpotDto {
     @NotBlank
     @Size(max = 10)
-    @UniqueElements
     private String parkingSpotNumber;
 
     @NotBlank
     @Size(max = 7)
-    @UniqueElements
     private String licensePlateCar;
 
     @NotBlank
